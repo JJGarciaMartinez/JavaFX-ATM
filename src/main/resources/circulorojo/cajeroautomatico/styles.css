@@ -1,0 +1,82 @@
+/*#01161e, #124559, #598392, #aec3b0, #eff6e0*/
+
+* {
+  -fx-font-family: "Quicksand", sans-serif;
+}
+
+/* Screen Login */
+
+.txt_login {
+  -fx-effect: dropshadow(one-pass-box, black, 8, 0, 2, 0);
+  -fx-font-weight: 700;
+  -fx-font-size: 4em;
+}
+
+.top_txt {
+  -fx-text-fill: #eff6e0;
+  -fx-font-size: 1.2em;
+}
+
+.user_txt {
+  -fx-padding: 0 20px;
+  -fx-font-weight: 700;
+  -fx-font-size: 1.4em;
+  -fx-prompt-text-fill: rgba(0, 0, 0, 0.3);
+  -fx-background-radius: 30 30;
+
+  -fx-highlight-fill: rgba(0, 0, 0, 0.2);
+}
+
+.pass_txt {
+  -fx-padding: 0 20px;
+  -fx-font-weight: 700;
+  -fx-font-size: 1.4em;
+  -fx-prompt-text-fill: rgba(0, 0, 0, 0.3);
+  -fx-background-radius: 30 30;
+
+  -fx-highlight-fill: rgba(0, 0, 0, 0.2);
+}
+
+.exit_button {
+  -fx-font-weight: 900;
+  -fx-font-size: 1.8em;
+  -fx-background-color: #eff6e0;
+  -fx-background-radius: 30 30;
+}
+
+.exit_button:hover {
+  -fx-background-color: #dfe6d2;
+}
+
+.login_button {
+  -fx-font-weight: 900;
+  -fx-font-size: 1.8em;
+  -fx-cursor: hand;
+  -fx-background-color: #598392;
+  -fx-background-radius: 30 30;
+}
+
+.login_button:hover {
+  -fx-background-color: #6492a3;
+}
+
+.login_button:pressed {
+  -fx-background-color: #4b6c79;
+}
+
+.tool {
+  -fx-font-weight: bold;
+  -fx-font-size: 1em;
+}
+
+.welcome_txt {
+  -fx-effect: dropshadow(one-pass-box, black, 8, 0, 2, 0);
+  -fx-font-weight: bold;
+  -fx-font-size: 2em;
+}
+
+.welcome_txt2 {
+  -fx-font-size: 1.2em;
+}
+
+/* Screen Login END */

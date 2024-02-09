@@ -1,0 +1,323 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="750.0" prefWidth="1000.0" style="-fx-background-color: #01161e;" stylesheets="@stylesScreen.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="circulorojo.cajeroautomatico.keeptoController">
+   <children>
+      <Circle fill="#aec3b0" layoutX="588.0" layoutY="714.0" radius="100.0" stroke="BLACK" strokeType="INSIDE" AnchorPane.bottomAnchor="-64.0" AnchorPane.leftAnchor="488.0" />
+      <Pane layoutX="279.0" layoutY="-119.0" prefHeight="285.0" prefWidth="479.0" rotate="49.8" style="-fx-background-color: #eff6e0; -fx-background-radius: 80;" AnchorPane.leftAnchor="279.0" AnchorPane.topAnchor="-119.0" />
+      <Circle fill="#598392" layoutX="969.0" layoutY="346.0" radius="100.0" stroke="BLACK" strokeType="INSIDE" AnchorPane.bottomAnchor="304.0" AnchorPane.rightAnchor="-69.0" />
+      <VBox prefHeight="750.0" prefWidth="318.0" style="-fx-background-color: #124559;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Pane prefHeight="292.0" prefWidth="318.0" styleClass="pane1">
+               <children>
+                  <Label layoutX="68.0" layoutY="183.0" text="¡BIENVENIDO!" textFill="#eff6e0" />
+                  <FontAwesomeIconView id="logo" fill="#aec3b0" glyphName="USER_CIRCLE" layoutX="117.0" layoutY="163.0" selectionFill="#eff6e0" size="80" />
+                  <FontAwesomeIconView id="logo" fill="#598392" glyphName="BANK" layoutX="14.0" layoutY="40.0" size="30" />
+                  <Label id="logo" layoutX="55.0" layoutY="13.0" text="MII BANK" textFill="#eff6e0">
+                     <font>
+                        <Font size="10.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <Button fx:id="btn_home" alignment="BASELINE_LEFT" graphicTextGap="15.0" mnemonicParsing="false" onAction="#cambioEvent" prefHeight="60.0" prefWidth="347.0" style="-fx-background-radius: 30 30 0 0;" styleClass="btn_1" stylesheets="@stylesScreen.css" text="Inicio">
+               <graphic>
+                  <FontAwesomeIconView fill="#eff6e0" glyphName="HOME" size="15" />
+               </graphic>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <padding>
+                  <Insets left="50.0" />
+               </padding>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button fx:id="btn_estados" alignment="BASELINE_LEFT" graphicTextGap="15.0" mnemonicParsing="false" onAction="#cambioEvent" prefHeight="60.0" prefWidth="347.0" styleClass="btn_1" stylesheets="@stylesScreen.css" text="Estados de Cuenta">
+               <graphic>
+                  <FontAwesomeIconView fill="#eff6e0" glyphName="FILE" size="15" />
+               </graphic>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <padding>
+                  <Insets left="50.0" />
+               </padding>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button fx:id="btn_servicios" alignment="BASELINE_LEFT" graphicTextGap="15.0" mnemonicParsing="false" onAction="#cambioEvent" prefHeight="60.0" prefWidth="347.0" styleClass="btn_1" stylesheets="@stylesScreen.css" text="Pago de servicios">
+               <graphic>
+                  <FontAwesomeIconView fill="#eff6e0" glyphName="TAG" size="15" />
+               </graphic>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <padding>
+                  <Insets left="50.0" />
+               </padding>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button fx:id="btn_credito" alignment="BASELINE_LEFT" graphicTextGap="15.0" mnemonicParsing="false" onAction="#cambioEvent" prefHeight="60.0" prefWidth="347.0" style="-fx-background-radius: 0 0 30 30;" styleClass="btn_1" stylesheets="@stylesScreen.css" text="Pago de Credito">
+               <graphic>
+                  <FontAwesomeIconView fill="#eff6e0" glyphName="CREDIT_CARD" size="15" />
+               </graphic>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <padding>
+                  <Insets left="50.0" />
+               </padding>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button fx:id="log_out" alignment="BASELINE_LEFT" graphicTextGap="15.0" mnemonicParsing="false" onAction="#signOut" prefHeight="60.0" prefWidth="347.0" style="-fx-background-radius: 30 30;" styleClass="btn_out" text="Cerrar Sesión">
+               <graphic>
+                  <FontAwesomeIconView fill="#eff6e0" glyphName="SIGN_OUT" size="15" />
+               </graphic>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <padding>
+                  <Insets left="50.0" />
+               </padding>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <VBox.margin>
+                  <Insets top="50.0" />
+               </VBox.margin>
+            </Button>
+         </children>
+      </VBox>
+      <Pane layoutX="318.0" prefHeight="91.0" prefWidth="682.0" style="-fx-background-color: #598392; -fx-background-radius: 0 0 30 30;" AnchorPane.leftAnchor="318.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Label fx:id="barStatus" layoutX="42.0" layoutY="31.0" prefHeight="54.0" prefWidth="508.0" text="Inicio" textFill="#eff6e0">
+               <font>
+                  <Font name="System Bold" size="35.0" />
+               </font>
+            </Label>
+            <Label fx:id="barStatusMin" layoutX="42.0" layoutY="21.0" prefHeight="20.0" prefWidth="508.0" text="/inicio" textFill="#eff6e0">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <FontAwesomeIconView fx:id="iconStatus" fill="#eff6e0" glyphName="HOME" layoutX="602.0" layoutY="63.0" size="50" />
+         </children>
+      </Pane>
+      <StackPane layoutX="363.0" layoutY="144.0">
+         <children>
+            <GridPane fx:id="screenCredito" disable="true" prefHeight="510.0" prefWidth="591.0" visible="false">
+               <columnConstraints>
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+               </columnConstraints>
+               <rowConstraints>
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+               </rowConstraints>
+               <children>
+                  <Pane prefHeight="200.0" prefWidth="200.0">
+                     <children>
+                        <Pane layoutX="12.0" prefHeight="102.0" prefWidth="570.0" styleClass="rectangulo">
+                           <children>
+                              <Label layoutX="23.0" layoutY="14.0" style="-fx-font-weight: bold; -fx-font-size: 1.5em;" text="DEUDA A LIQUIDAR" textFill="#eff6e0" />
+                              <Label fx:id="num_cuenta3" layoutX="104.0" layoutY="59.0" styleClass="cuentaTxt" text="xxxxxxxxxx" textFill="#598392" />
+                              <Label fx:id="deudaTxt" graphicTextGap="30.0" layoutX="285.0" layoutY="17.0" styleClass="saldo_txt1" text="000.00" textFill="#eff6e0">
+                                 <graphic>
+                                    <FontAwesomeIconView fill="#eff6e0" glyphName="DOLLAR" selectionFill="#eff6e0" size="40" tabSize="0" />
+                                 </graphic>
+                              </Label>
+                              <Label layoutX="38.0" layoutY="61.0" style="-fx-font-size: 1.2em;" text="Cuenta" textFill="#eff6e0" />
+                           </children>
+                        </Pane>
+                        <Pane layoutX="110.0" layoutY="142.0" prefHeight="80.0" prefWidth="371.0" styleClass="rectangulo">
+                           <children>
+                              <RadioButton fx:id="boton1" contentDisplay="CENTER" layoutX="20.0" layoutY="17.0" mnemonicParsing="false" style="-fx-font-weight: bold;" styleClass="radius" text="Pago puntual" textFill="#eff6e0" />
+                              <Label layoutX="51.0" layoutY="43.0" text="Ahorra Q44" textFill="#eff6e0" />
+                           </children>
+                        </Pane>
+                        <Pane layoutX="110.0" layoutY="245.0" prefHeight="80.0" prefWidth="371.0" styleClass="rectangulo">
+                           <children>
+                              <RadioButton fx:id="boton2" contentDisplay="CENTER" layoutX="24.0" layoutY="17.0" mnemonicParsing="false" style="-fx-font-weight: bold;" styleClass="radius" text="Pago sugerido" textFill="#eff6e0" />
+                              <Label layoutX="51.0" layoutY="43.0" text="Adelanta una semana" textFill="#eff6e0" />
+                           </children>
+                        </Pane>
+                        <Pane layoutX="110.0" layoutY="346.0" prefHeight="80.0" prefWidth="371.0" styleClass="rectangulo">
+                           <children>
+                              <RadioButton fx:id="boton3" contentDisplay="CENTER" layoutX="19.0" layoutY="29.0" mnemonicParsing="false" style="-fx-font-weight: bold;" styleClass="radius" text="Pago para Liquidar" textFill="#eff6e0" />
+                           </children>
+                        </Pane>
+                        <Button fx:id="btnPagar" graphicTextGap="15.0" layoutX="177.0" layoutY="465.0" mnemonicParsing="false" onAction="#evtAlert" prefHeight="45.0" prefWidth="240.0" styleClass="btn_deduda" text="PAGAR">
+                           <graphic>
+                              <FontAwesomeIconView fill="#eff6e0" glyphName="MONEY" size="20" />
+                           </graphic>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </Button>
+                     </children>
+                  </Pane>
+               </children>
+            </GridPane>
+            <GridPane fx:id="screenServicios" disable="true" prefHeight="510.0" prefWidth="591.0" visible="false">
+               <columnConstraints>
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+               </columnConstraints>
+               <rowConstraints>
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+               </rowConstraints>
+               <children>
+                  <Pane prefHeight="200.0" prefWidth="200.0">
+                     <children>
+                        <Pane layoutX="11.0" prefHeight="102.0" prefWidth="570.0" styleClass="rectangulo">
+                           <children>
+                              <Label layoutX="23.0" layoutY="14.0" style="-fx-font-weight: bold; -fx-font-size: 1.5em;" text="Saldo De Cuenta" textFill="#eff6e0" />
+                              <Label fx:id="num_cuenta" layoutX="23.0" layoutY="42.0" styleClass="estados_txt" text="xxxxxxxxxx" textFill="#598392" />
+                              <Label fx:id="saldoTxt1" graphicTextGap="30.0" layoutX="285.0" layoutY="17.0" styleClass="saldo_txt1" text="000.00" textFill="#eff6e0">
+                                 <graphic>
+                                    <FontAwesomeIconView fill="#eff6e0" glyphName="DOLLAR" selectionFill="#eff6e0" size="40" tabSize="0" />
+                                 </graphic>
+                              </Label>
+                           </children>
+                        </Pane>
+                        <Pane layoutY="139.0" prefHeight="371.0" prefWidth="591.0" styleClass="rectangulo">
+                           <children>
+                              <Label layoutX="23.0" layoutY="14.0" style="-fx-font-size: 1.5em; -fx-font-weight: bold;" text="SERVICIOS" textFill="#eff6e0" />
+                              <Label graphicTextGap="15.0" layoutX="39.0" layoutY="75.0" style="-fx-font-weight: bold; -fx-font-size: 1em;" text="Añadir nuevo servicio" textFill="#aec3b0">
+                                 <graphic>
+                                    <FontAwesomeIconView glyphName="PLUS_CIRCLE" size="45" styleClass="plusIcon" />
+                                 </graphic>
+                              </Label>
+                           </children>
+                        </Pane>
+                     </children>
+                  </Pane>
+               </children>
+            </GridPane>
+            <GridPane fx:id="screenEstados" disable="true" prefHeight="510.0" prefWidth="591.0" visible="false">
+               <columnConstraints>
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+               </columnConstraints>
+               <rowConstraints>
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+               </rowConstraints>
+               <children>
+                  <Pane prefHeight="200.0" prefWidth="200.0">
+                     <children>
+                        <Pane layoutX="26.0" layoutY="51.0" prefHeight="154.0" prefWidth="540.0" style="-fx-background-radius: 30;" styleClass="estados_container">
+                           <children>
+                              <Label layoutX="28.0" layoutY="20.0" styleClass="estados_txt" text="SALDO DISPONIBLE" textFill="#598392" />
+                              <Label fx:id="saldoTxt" graphicTextGap="30.0" layoutX="185.0" layoutY="47.0" styleClass="saldo_txt" text="000.00" textFill="#eff6e0">
+                                 <graphic>
+                                    <FontAwesomeIconView fill="#eff6e0" glyphName="DOLLAR" selectionFill="#eff6e0" size="50" tabSize="0" />
+                                 </graphic>
+                              </Label>
+                              <Label fx:id="num_cuenta1" layoutX="35.0" layoutY="47.0" styleClass="estados_txt" text="xxxxxxxxxx" textFill="#598392" />
+                           </children>
+                        </Pane>
+                     </children>
+                  </Pane>
+                  <Pane prefHeight="200.0" prefWidth="200.0" GridPane.rowIndex="1">
+                     <children>
+                        <Pane layoutX="26.0" layoutY="87.0" prefHeight="154.0" prefWidth="540.0" style="-fx-background-radius: 30;" styleClass="estados_container">
+                           <children>
+                              <Label layoutX="28.0" layoutY="20.0" styleClass="estados_txt" text="CREDITO DISPONIBLE" textFill="#598392" />
+                              <Label fx:id="creditoTxt" graphicTextGap="30.0" layoutX="185.0" layoutY="47.0" styleClass="saldo_txt" text="000.00" textFill="#eff6e0">
+                                 <graphic>
+                                    <FontAwesomeIconView fill="#eff6e0" glyphName="DOLLAR" selectionFill="#eff6e0" size="50" tabSize="0" />
+                                 </graphic>
+                              </Label>
+                              <Label fx:id="num_cuenta2" layoutX="35.0" layoutY="47.0" styleClass="estados_txt" text="xxxxxxxxxx" textFill="#598392" />
+                           </children>
+                        </Pane>
+                     </children>
+                  </Pane>
+               </children>
+            </GridPane>
+            <GridPane fx:id="screenIndex" prefHeight="510.0" prefWidth="591.0" styleClass="screenInicio">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <Pane prefHeight="167.0" prefWidth="591.0">
+                     <children>
+                        <Pane layoutY="-26.0" prefHeight="237.0" prefWidth="240.0" styleClass="rectangulo">
+                           <children>
+                              <Label layoutX="31.0" layoutY="177.0" prefHeight="54.0" prefWidth="178.0" text="CONSULTAR MIS ESTADOS DE CUENTA" textAlignment="CENTER" textFill="#eff6e0" wrapText="true" />
+                              <Button id="btns_inicio" fx:id="btn_inicio1" layoutX="43.0" layoutY="14.0" mnemonicParsing="false" onAction="#cambioEvent" prefHeight="154.0" prefWidth="154.0" styleClass="btn_rectangulo1">
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor>
+                                 <graphic>
+                                    <FontAwesomeIconView fill="#eff6e0" glyphName="FILE" size="80" styleClass="icons" />
+                                 </graphic>
+                              </Button>
+                           </children>
+                        </Pane>
+                     </children>
+                  </Pane>
+                  <Pane prefHeight="191.0" prefWidth="575.0" GridPane.rowIndex="1">
+                     <children>
+                        <Pane layoutX="351.0" layoutY="-27.0" prefHeight="237.0" prefWidth="240.0" styleClass="rectangulo">
+                           <children>
+                              <Button id="btns_inicio" fx:id="btn_inicio2" layoutX="43.0" layoutY="12.0" mnemonicParsing="false" onAction="#cambioEvent" prefHeight="154.0" prefWidth="154.0" styleClass="btn_rectangulo2">
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor>
+                                 <graphic>
+                                    <FontAwesomeIconView fill="#eff6e0" glyphName="TAG" size="80" styleClass="icons" />
+                                 </graphic>
+                              </Button>
+                              <Label layoutX="43.0" layoutY="169.0" prefHeight="54.0" prefWidth="154.0" text="PAGAR MIS SERVICIOS" textAlignment="CENTER" textFill="#eff6e0" wrapText="true" />
+                           </children>
+                        </Pane>
+                     </children>
+                  </Pane>
+                  <Pane prefHeight="200.0" prefWidth="200.0" GridPane.rowIndex="2">
+                     <children>
+                        <Pane layoutY="-27.0" prefHeight="237.0" prefWidth="240.0" styleClass="rectangulo">
+                           <children>
+                              <Button id="btns_inicio" fx:id="btn_inicio3" layoutX="43.0" layoutY="11.0" mnemonicParsing="false" onAction="#cambioEvent" prefHeight="154.0" prefWidth="154.0" styleClass="btn_rectangulo3">
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor>
+                                 <graphic>
+                                    <FontAwesomeIconView fill="#eff6e0" glyphName="CREDIT_CARD" size="80" styleClass="icons" />
+                                 </graphic>
+                              </Button>
+                              <Label layoutX="53.0" layoutY="169.0" prefHeight="54.0" prefWidth="134.0" text="PAGAR MI CREDITO" textAlignment="CENTER" textFill="#eff6e0" wrapText="true" />
+                           </children>
+                        </Pane>
+                     </children>
+                  </Pane>
+               </children>
+            </GridPane>
+         </children>
+      </StackPane>
+   </children>
+</AnchorPane>

@@ -1,0 +1,140 @@
+/*#01161e, #124559, #598392, #aec3b0, #eff6e0*/
+
+* {
+  -fx-font-family: "Quicksand", sans-serif;
+}
+
+.pane1 {
+  -fx-font-size: 2.2em;
+  -fx-font-weight: 700;
+}
+
+.btn_1 {
+  -fx-background-color: #12485e;
+  -fx-text-fill: #eff6e0;
+  -fx-font-size: 1.4em;
+}
+
+.btn_1:hover {
+  -fx-background-color: #165269;
+}
+
+.btn_1:pressed {
+  -fx-background-color: #113f52;
+}
+
+.btn_out {
+  -fx-background-color: #598392;
+  -fx-text-fill: #eff6e0;
+  -fx-font-size: 1.4em;
+}
+
+.btn_out:hover {
+  -fx-background-color: rgb(99, 146, 163);
+}
+
+.btn_out:pressed {
+  -fx-background-color: #537986;
+}
+
+#logo {
+  -fx-effect: dropshadow(one-pass-box, black, 8, 0, 2, 0);
+}
+
+.rectangulo {
+  -fx-font-size: 1.3em;
+  -fx-background-color: rgb(18, 72, 94, 0.7);
+  -fx-background-radius: 20;
+}
+
+.btn_rectangulo1 {
+  -fx-background-color: linear-gradient(
+    from 25% 25% to 100% 100%,
+    #98bb9c,
+    #eff6e0
+  );
+  -fx-background-radius: 50%;
+}
+
+.btn_rectangulo2 {
+  -fx-background-color: linear-gradient(
+    from 25% 25% to 100% 100%,
+    #598392,
+    #eff6e0
+  );
+  -fx-background-radius: 50%;
+}
+
+.btn_rectangulo3 {
+  -fx-background-color: linear-gradient(
+    from 25% 25% to 100% 100%,
+    #124559,
+    #eff6e0
+  );
+  -fx-background-radius: 50%;
+}
+
+#btns_inicio:pressed {
+  -fx-effect: innershadow(three-pass-box, rgba(0, 0, 0, 0.5), 10, 0, 2.1, 2.1);
+}
+
+.icons {
+  -fx-effect: dropshadow(one-pass-box, rgba(0, 0, 0, 0.5), 8, 0, 2, 0);
+}
+
+/* ESTADOS */
+
+.estados_container {
+  -fx-background-color: rgb(18, 72, 94, 0.7);
+}
+
+.estados_txt {
+  -fx-text-fill: #eff6e0;
+  -fx-font-size: 1.5em;
+  -fx-effect: dropshadow(one-pass-box, black, 8, 0, 2, 0);
+}
+
+.saldo_txt {
+  -fx-text-fill: #eff6e0;
+  -fx-font-size: 5em;
+}
+
+.saldo_txt1 {
+  -fx-text-fill: #eff6e0;
+  -fx-font-size: 3em;
+}
+
+.plusIcon {
+  -fx-cursor: hand;
+  -fx-fill: linear-gradient(from 25% 25% to 100% 100%, #98bb9c, #eff6e0);
+}
+
+.plusIcon:hover {
+  -fx-fill: linear-gradient(from 25% 25% to 100% 100%, #a2c7a6, #eff3e6);
+}
+
+.plusIcon:pressed {
+  -fx-fill: linear-gradient(from 25% 25% to 100% 100%, #799c7d, #9fa592);
+}
+
+.cuentaTxt {
+  -fx-text-fill: #eff6e0;
+  -fx-font-size: 1.4em;
+  -fx-effect: dropshadow(one-pass-box, black, 8, 0, 2, 0);
+}
+
+.btn_deduda {
+  -fx-text-fill: #eff6e0;
+  -fx-font-size: 1.4em;
+  -fx-background-color: #598392;
+  -fx-background-radius: 30;
+  -fx-effect: dropshadow(one-pass-box, black, 8, 0, 2, 0);
+}
+
+.btn_deduda:hover {
+  -fx-background-color: rgb(99, 146, 163);
+}
+
+.btn_deduda:pressed {
+  -fx-background-color: #537986;
+}
